@@ -121,6 +121,20 @@ main > section {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+#experiance-badge {
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+#experiance-year {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.feature-architect img {
+  width: 100%;
+}
 
 /* Some facts related styles */
 .fact-container {
@@ -164,11 +178,26 @@ main > section {
 .sponsor-companies img {
   filter: grayscale(100%);
 }
+
+/* footer section */
+footer {
+  width: 1440px;
+  height: 100px;
+  margin: 130px auto;
+  background-color: #fff4e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-description {
+  text-align: center;
+}
 /* media query for small device*/
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-links,
-  .teams {
+  .teams,
+  .feature {
     flex-direction: column;
   }
   .team-image-container,
@@ -181,6 +210,11 @@ main > section {
     gap: 24px;
   }
 
+  #experiance-badge {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
   .sponsor-companies {
     justify-items: center;
     gap: 50px;
@@ -188,11 +222,18 @@ main > section {
   .our-features {
     margin-left: 20px;
   }
+
+  footer {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+  }
 }
 
 /* media query for medium device*/
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams {
+  .teams,
+  .feature {
     flex-direction: column;
   }
   .our-features {
@@ -203,5 +244,15 @@ main > section {
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
+  }
+  #experiance-badge {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  footer {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
   }
 }
